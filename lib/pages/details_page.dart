@@ -29,6 +29,17 @@ class DetailsPage extends StatelessWidget {
                 // Navigator.pop(context, "Learning is key");
               },
               child: Text("Get back to previous page"),
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue,
+                  foregroundColor: Colors.white
+              ),
+              onPressed: () {
+                context.goNamed('secondPage');
+                // Navigator.pop(context, "Learning is key");
+              },
+              child: Text("Get back to Second page"),
             )
           ],
         ),

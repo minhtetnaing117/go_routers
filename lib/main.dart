@@ -22,7 +22,7 @@ final GoRouter _router = GoRouter(
           name: 'detailsPage',
           builder: (context, state) {
             final name = state.pathParameters['name'];
-            return DetailsPage(title: 'Flutter $name');
+            return DetailsPage(title: '$name');
           }
       ),
       GoRoute(
@@ -30,7 +30,13 @@ final GoRouter _router = GoRouter(
           name: 'secondPage',
           builder: (context, state) => const SecondPage()
       ),
+      GoRoute(
+          path: '/mainPage',
+          name: 'mainPage',
+          builder: (context, state) => const MainPage()
+      ),
     ]
+
 );
 
 class MyApp extends StatelessWidget {

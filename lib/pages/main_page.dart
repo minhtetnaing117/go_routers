@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -17,9 +18,9 @@ class MainPage extends StatelessWidget {
               foregroundColor: Colors.white
           ),
           onPressed: () {
-            Navigator.pushNamed(context, '/second');
+            context.goNamed('home');
           },
-          child: Text("Redirect to second Page"),
+          child: Text("Redirect to home Page"),
         ),
       ),
     );
