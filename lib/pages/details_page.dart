@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class DetailsPage extends StatelessWidget {
   final String title;
   final String message;
-  DetailsPage({required this.title, this.message = "Default message"});
+  const DetailsPage({required this.title, this.message = "Default message"});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +25,8 @@ class DetailsPage extends StatelessWidget {
                   foregroundColor: Colors.white
               ),
               onPressed: () {
-                Navigator.pop(context, "Learning is key");
+                context.go('/');
+                // Navigator.pop(context, "Learning is key");
               },
               child: Text("Get back to previous page"),
             )
