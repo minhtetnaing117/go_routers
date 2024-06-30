@@ -36,7 +36,7 @@ class DetailsPage extends StatelessWidget {
                   foregroundColor: Colors.white
               ),
               onPressed: () {
-                context.goNamed('secondPage');
+                context.goNamed('secondPage', extra: 'Message to Second Page');
                 // Navigator.pop(context, "Learning is key");
               },
               child: Text("Get back to Second page"),

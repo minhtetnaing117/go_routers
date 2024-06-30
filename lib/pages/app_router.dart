@@ -26,7 +26,10 @@ final GoRouter appRouter = GoRouter(
     GoRoute(
       path: '/secondPage',
       name: 'secondPage',
-      builder: (context, state) => const SecondPage(),
+      builder: (context, state) {
+        final message = state.extra as String? ?? 'New message';
+        return SecondPage(message: message);
+      },
     ),
     GoRoute(
       path: '/mainPage',
