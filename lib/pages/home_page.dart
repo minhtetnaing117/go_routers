@@ -8,26 +8,24 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Navigation Tuto"),
+        title: Text("Home"),
         elevation: 10,
       ),
-      body: Container(
-        child: Center(
-          child: ElevatedButton(
-            style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.red,
-                foregroundColor: Colors.white
-            ),
-            onPressed: () async {
-              // context.go('/detailsPage/Fabrice');
-              context.goNamed('detailsPage', pathParameters: { 'name': 'MHN'});
-              // Navigator.of(context).pushAndRemoveUntil(
-              //     MaterialPageRoute(builder: (context)=>
-              //         DetailsPage(title: "Flutter Guy")),
-              //         (route) => false);
-            },
-            child: Text("Redirect to details Page"),
+      body: Center(
+        child: ElevatedButton(
+          style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.red,
+              foregroundColor: Colors.white
           ),
+          onPressed: () async {
+            // context.go('/detailsPage/Fabrice');
+            context.goNamed('detailsPage', pathParameters: { 'name': 'MHN'});
+            // Navigator.of(context).pushAndRemoveUntil(
+            //     MaterialPageRoute(builder: (context)=>
+            //         DetailsPage(title: "Flutter Guy")),
+            //         (route) => false);
+          },
+          child: Text("Redirect to details Page"),
         ),
       ),
     );

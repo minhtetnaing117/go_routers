@@ -7,6 +7,10 @@ class SecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text("Second Page"),
+        elevation: 10,
+      ),
       body: Center(
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
@@ -16,7 +20,7 @@ class SecondPage extends StatelessWidget {
           onPressed: () {
             context.goNamed('mainPage');
           },
-          child: Text("Redirect to main Page"),
+          child: const Text("Redirect to main Page"),
         ),
       ),
     );
