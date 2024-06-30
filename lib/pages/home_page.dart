@@ -20,7 +20,8 @@ class HomePage extends StatelessWidget {
                 foregroundColor: Colors.white
             ),
             onPressed: () async {
-              context.goNamed('detailsPage');
+              context.go('/detailsPage/Fabrice');
+              // context.goNamed('detailsPage');
               // Navigator.of(context).pushAndRemoveUntil(
               //     MaterialPageRoute(builder: (context)=>
               //         DetailsPage(title: "Flutter Guy")),

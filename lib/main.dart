@@ -10,7 +10,7 @@ void main() {
 }
 
 final GoRouter _router = GoRouter(
-  initialLocation: '/secondPage',
+  initialLocation: '/',
     routes: [
       GoRoute(
         path: '/',
@@ -18,9 +18,12 @@ final GoRouter _router = GoRouter(
         builder: (context, state) => const HomePage()
       ),
       GoRoute(
-          path: '/detailsPage',
+          path: '/detailsPage/:name',
           name: 'detailsPage',
-          builder: (context, state) => const DetailsPage(title: 'Flutter Guys')
+          builder: (context, state) {
+            final name = state.pathParameters['name'];
+            return DetailsPage(title: 'Flutter $name');
+          }
       ),
       GoRoute(
           path: '/secondPage',
