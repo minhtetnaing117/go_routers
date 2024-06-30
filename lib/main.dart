@@ -12,11 +12,13 @@ void main() {
 final GoRouter _router = GoRouter(
     routes: [
       GoRoute(
-          path: '/',
+        path: '/',
+        name: 'home',
         builder: (context, state) => const HomePage()
       ),
       GoRoute(
           path: '/detailsPage',
+          name: 'detailsPage',
           builder: (context, state) => DetailsPage(title: 'Flutter Guys')
       ),
     ]
