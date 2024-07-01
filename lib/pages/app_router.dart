@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:go_routers/pages/details_page.dart';
 import 'package:go_routers/pages/home_page.dart';
+import 'package:go_routers/pages/lifecycle_page.dart';
 import 'package:go_routers/pages/main_page.dart';
 import 'package:go_routers/pages/second_page.dart';
 import 'package:go_routers/pages/splash_screen.dart';
@@ -41,6 +42,11 @@ final GoRouter appRouter = GoRouter(
       path: '/mainPage',
       name: 'mainPage',
       builder: (context, state) => const MainPage(),
+    ),
+    GoRoute(
+      path: '/lifecyclePage',
+      name: 'lifecyclePage',
+      builder: (context, state) => const LifecyclePage(),
     ),
   ],
 );

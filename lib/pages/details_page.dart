@@ -40,7 +40,18 @@ class DetailsPage extends StatelessWidget {
                 // Navigator.pop(context, "Learning is key");
               },
               child: Text("Get back to Second page"),
-            )
+            ),
+            ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue,
+                  foregroundColor: Colors.white
+              ),
+              onPressed: () {
+                context.goNamed('lifecyclePage');
+                // Navigator.pop(context, "Learning is key");
+              },
+              child: Text("Head to Lifecycle page"),
+            ),
           ],
         ),
       ),
