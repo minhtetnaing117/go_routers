@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:go_routers/pages/drawer_page.dart';
 
 class DetailsPage extends StatelessWidget {
   final String title;
@@ -11,8 +12,9 @@ class DetailsPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
-        elevation: 10,
+        elevation: 0,
       ),
+      drawer: const DrawerPage(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

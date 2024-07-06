@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:go_routers/pages/drawer_page.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({Key? key}) : super(key: key);
@@ -9,8 +10,9 @@ class MainPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Main Page"),
-        elevation: 10,
+        elevation: 0,
       ),
+      drawer: const DrawerPage(),
       body: Center(
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(

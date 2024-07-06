@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:go_routers/pages/drawer_page.dart';
 
 class LifecyclePage extends StatefulWidget {
   const LifecyclePage({super.key});
@@ -91,6 +92,8 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
       appBar: AppBar(
         title: Text(widget.title),
       ),
+
+      drawer: const DrawerPage(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

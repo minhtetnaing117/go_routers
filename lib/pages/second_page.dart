@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:go_routers/pages/drawer_page.dart';
 
 class SecondPage extends StatelessWidget {
   final String message;
@@ -13,8 +14,9 @@ class SecondPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Second Page"),
-        elevation: 10,
+        elevation: 0,
       ),
+      drawer: const DrawerPage(),
       body: Column(
         children: [
           Center(child: Text(message)),

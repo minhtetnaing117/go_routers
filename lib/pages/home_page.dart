@@ -1,16 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:go_routers/pages/drawer_page.dart';
+
+import 'package:go_routers/pages/second_page.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Home"),
-        elevation: 10,
+        title: const Text("Home"),
+        elevation: 0,
       ),
+      drawer: const DrawerPage(),
       body: Center(
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
@@ -25,7 +31,7 @@ class HomePage extends StatelessWidget {
             //         DetailsPage(title: "Flutter Guy")),
             //         (route) => false);
           },
-          child: Text("Redirect to details Page"),
+          child: const Text("Redirect to details Page"),
         ),
       ),
     );
