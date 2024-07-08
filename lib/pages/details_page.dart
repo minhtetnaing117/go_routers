@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:go_routers/pages/drawer_page.dart';
+import 'package:go_routers/pages/tab_page.dart';
 
 class DetailsPage extends StatelessWidget {
   final String title;
@@ -54,6 +55,7 @@ class DetailsPage extends StatelessWidget {
               },
               child: Text("Head to Lifecycle page"),
             ),
+            // const TabPage()
           ],
         ),
       ),

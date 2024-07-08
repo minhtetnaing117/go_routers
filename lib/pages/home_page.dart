@@ -17,6 +17,7 @@ class HomePage extends StatelessWidget {
         elevation: 0,
       ),
       drawer: const DrawerPage(),
+
       body: Center(
         child: ElevatedButton(
           style: ElevatedButton.styleFrom(
@@ -32,8 +33,11 @@ class HomePage extends StatelessWidget {
             //         (route) => false);
           },
           child: const Text("Redirect to details Page"),
+
         ),
+
       ),
+
     );
   }
 }

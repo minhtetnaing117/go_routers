@@ -20,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void _navigateToHome() async {
     await Future.delayed(const Duration(seconds: 2));
     if (mounted) {
-      context.go('/');
+      context.go('/TabPage');
     }
   }
 

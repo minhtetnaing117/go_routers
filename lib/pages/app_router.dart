@@ -7,6 +7,7 @@ import 'package:go_routers/pages/lifecycle_page.dart';
 import 'package:go_routers/pages/main_page.dart';
 import 'package:go_routers/pages/second_page.dart';
 import 'package:go_routers/pages/splash_screen.dart';
+import 'package:go_routers/pages/tab_page.dart';
 
 final GoRouter appRouter = GoRouter(
   initialLocation: '/splash',
@@ -46,6 +47,11 @@ final GoRouter appRouter = GoRouter(
       path: '/lifecyclePage',
       name: 'lifecyclePage',
       builder: (context, state) => const LifecyclePage(),
+    ),
+    GoRoute(
+      path: '/TabPage',
+      name: 'TabPage',
+      builder: (context, state) => const TabPage(),
     ),
   ],
 );
